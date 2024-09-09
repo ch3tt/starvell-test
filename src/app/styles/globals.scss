@@ -436,7 +436,9 @@ button {
       > p:not(&:last-child) {
         margin-bottom: 8px;
       }
-
+p:not(&:last-child) {
+  margin-bottom: 8px;
+}
       h6 {
         color: #33363e;
         font-size: 16px;
