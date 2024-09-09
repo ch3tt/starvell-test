@@ -1,9 +1,8 @@
 "use client";
 import lightning from "./images/lightning.svg";
 import pin from "./images/pin.svg";
-import vertical_arrows from "./images/vertical_arrows.svg";
 import search from "./images/search.svg";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import backgroundTop from "./images/background-top.png";
 import Image from "next/image";
 import SelectComponent from "./components/Select";

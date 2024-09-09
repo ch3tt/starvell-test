@@ -14,10 +14,10 @@ export default function SelectComponent({
 }) {
   const [selectValue, setSelectValue] = useState<string | undefined>(undefined);
   const [open, setOpen] = useState(false);
-  const selectRef = useRef<HTMLLIElement | null>(document.createElement("li"));
+  const selectRef = useRef<any>();
   return (
     <>
-      <li ref={selectRef} className="select">
+      <li ref={selectRef} className={"select "+(thin ? 'thin': '')}>
         <div
           onClick={(e) => {
             e.stopPropagation();

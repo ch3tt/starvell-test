@@ -1,11 +1,9 @@
-import type { Metadata } from "next";
-import { atom } from "jotai";
+"use client";
+
+
 import "./styles/globals.css";
 
-export const metadata: Metadata = {
-  title: "Starvell",
-  description: "",
-};
+
 
 export default function RootLayout({
   children,

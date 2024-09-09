@@ -9,7 +9,7 @@ export default function Popup({ onClose }: { onClose: () => void }) {
   const onDrop = useCallback((acceptedFiles: any) => {
     setDroppedFile(acceptedFiles[0].name);
   }, []);
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
+  const { getRootProps, getInputProps } = useDropzone({ onDrop });
 
   const [droppedFile, setDroppedFile] = useState<String | null>(null);
 

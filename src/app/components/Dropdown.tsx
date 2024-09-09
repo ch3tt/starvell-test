@@ -8,8 +8,8 @@ export default function Dropdown({
   title: string;
   values: Array<{ title: string }>;
 }) {
-  const dropdownRef = useRef<HTMLLIElement | null>(
-    document.createElement("li")
+  const dropdownRef = useRef<any>(
+  
   );
   return (
     <>
@@ -34,8 +34,8 @@ export default function Dropdown({
         </div>
         {
           <div className="dropdown__body">
-            {values.map((e) => (
-              <button>{e.title}</button>
+            {values.map((e,i) => (
+              <button key={i}>{e.title}</button>
             ))}
           </div>
         }
